@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>학교 생활 도우미</title>
 
  <style>
@@ -399,25 +400,40 @@ hr {
 @media (max-width: 600px) {
 
   body {
-
     padding: 10px;
   }
 
   .today-card {
-
-    padding: 20px;
+    padding: 18px;
   }
 
   h1 {
-
     font-size: 28px;
   }
 
   button {
-
     width: 100%;
   }
+
+  input[type="date"]{
+    appearance: none;
+    -webkit-appearance: none;
+
+    width: 100%;
+    max-width: 100%;
+
+    min-height: 48px;
+
+    background: white;
+
+    border: 1px solid #d1d5db;
+    border-radius: 12px;
+
+    font-size: 16px;
+  }
+
 }
+
 </style>
 
 </head>
@@ -438,14 +454,6 @@ hr {
   <p id="streak">
     🔥 0일 연속 공부 중
   </p>
-
-  <hr>
-
-  <h3>📝 오늘 과제</h3>
-
-  <ul id="todayTasks"></ul>
-
-</div>
 
   <hr>
 
